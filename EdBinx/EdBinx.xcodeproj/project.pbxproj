@@ -15,6 +15,7 @@
 		99CB89FA1D5477C3003E5B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CB89F81D5477C3003E5B67 /* LaunchScreen.storyboard */; };
 		99CB8A051D5477C3003E5B67 /* EdBinxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB8A041D5477C3003E5B67 /* EdBinxTests.swift */; };
 		99CB8A101D5477C3003E5B67 /* EdBinxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB8A0F1D5477C3003E5B67 /* EdBinxUITests.swift */; };
+		99CB8A1E1D549497003E5B67 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB8A1D1D549497003E5B67 /* NetworkDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		99CB8A0B1D5477C3003E5B67 /* EdBinxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdBinxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CB8A0F1D5477C3003E5B67 /* EdBinxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdBinxUITests.swift; sourceTree = "<group>"; };
 		99CB8A111D5477C3003E5B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CB8A1D1D549497003E5B67 /* NetworkDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */,
+				99CB8A1D1D549497003E5B67 /* NetworkDefaults.swift */,
 				99CB89EE1D5477C3003E5B67 /* ViewController.swift */,
 				99CB89F01D5477C3003E5B67 /* Main.storyboard */,
 				99CB89F61D5477C3003E5B67 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				99CB89EF1D5477C3003E5B67 /* ViewController.swift in Sources */,
 				99CB89ED1D5477C3003E5B67 /* AppDelegate.swift in Sources */,
+				99CB8A1E1D549497003E5B67 /* NetworkDefaults.swift in Sources */,
 				99CB89F51D5477C3003E5B67 /* EdBinx.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				99CB8A161D5477C3003E5B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99CB8A171D5477C3003E5B67 /* Build configuration list for PBXNativeTarget "EdBinxTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				99CB8A191D5477C3003E5B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99CB8A1A1D5477C3003E5B67 /* Build configuration list for PBXNativeTarget "EdBinxUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				99CB8A1C1D5477C3003E5B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
