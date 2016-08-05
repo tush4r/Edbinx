@@ -11,5 +11,6 @@ import Foundation
 struct AppConstants {
     
     /*API Docs are at this URL: http://v2.wp-api.org/reference/posts/ ,plugin is currently in the BETA phase and hence the documentation isn't final.*/
-    let baseURL = "http://edbinx.com/wp-json/wp/v2/"
+    
+    let baseURL = "http://edbinx.com/wp-json/wp/v2/" //Change it for different clients
 }
