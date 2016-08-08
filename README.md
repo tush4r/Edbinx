@@ -4,6 +4,8 @@ EdBinx is a tech blog, and is for people like you and me. People who are always 
 This repository is for Swift 3 iOS app of EdBinx. 
 http://edbinx.com
 
+Design Credits:Avital UI Kit (https://pixelbuddha.net/freebie/avital-mobile-ui-kit-free-download)
+
 # LICENSE
 
 MIT License
