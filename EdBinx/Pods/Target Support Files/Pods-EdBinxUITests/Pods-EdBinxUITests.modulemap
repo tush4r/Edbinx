@@ -1,0 +1,6 @@
+framework module Pods_EdBinxUITests {
+  umbrella header "Pods-EdBinxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

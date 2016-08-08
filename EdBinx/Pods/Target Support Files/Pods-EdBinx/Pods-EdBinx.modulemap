@@ -1,0 +1,6 @@
+framework module Pods_EdBinx {
+  umbrella header "Pods-EdBinx-umbrella.h"
+
+  export *
+  module * { export * }
+}
