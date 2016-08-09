@@ -9,16 +9,16 @@
 import UIKit
 import XLPagerTabStrip
 
-class ViewController: BarPagerTabStripViewController {
+class ViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
-        settings.style.selectedBarBackgroundColor = .orange
         super.viewDidLoad()
-        navigationController?.navigationBar.addSubview(buttonBarView)
+        buttonBarView.selectedBar.backgroundColor = .orange
+        buttonBarView.backgroundColor = UIColor(red: 7/255, green: 185/255, blue: 155/255, alpha: 1)
     }
 
     override func viewControllersForPagerTabStrip(_ pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        return [Base1ViewController(), Base2ViewController()]
+        return [Base1ViewController(), Base2ViewController(), Base1ViewController(), Base2ViewController(), Base2ViewController(), Base1ViewController(), Base2ViewController()]
     }
 
     
@@ -26,7 +26,9 @@ class ViewController: BarPagerTabStripViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
+class NavController: UINavigationController {
+}
+
 

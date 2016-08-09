@@ -12,7 +12,7 @@ import XLPagerTabStrip
 class Base1ViewController: UIViewController, IndicatorInfoProvider {
 
     
-    var itemInfo = IndicatorInfo(title: "View")
+    var itemInfo = IndicatorInfo(title: "view")
     
     override func viewDidLoad() {
         super.viewDidLoad()
