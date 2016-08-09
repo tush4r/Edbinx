@@ -12,11 +12,11 @@ import XLPagerTabStrip
 class ViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         settings.style.buttonBarItemTitleColor = .white
         buttonBarView.backgroundColor = UIColor(hex: ColorCodes().barColor())
         settings.style.buttonBarBackgroundColor = UIColor(hex: ColorCodes().navColor())
         buttonBarView.selectedBar.backgroundColor = UIColor(hex: ColorCodes().sliderColor())
-        super.viewDidLoad()
     }
 
     override func viewControllersForPagerTabStrip(_ pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

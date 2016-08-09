@@ -39,7 +39,7 @@ public class BaseButtonBarPagerTabStripViewController<ButtonBarCellType : UIColl
         let buttonBarHeight = self.settings.style.buttonBarHeight ?? 44
         let buttonBar = ButtonBarView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: buttonBarHeight), collectionViewLayout: flowLayout)
         buttonBar.backgroundColor = UIColor.orange
-        buttonBar.selectedBar.backgroundColor = UIColor.black
+        buttonBar.selectedBar.backgroundColor = UIColor.white
         buttonBar.autoresizingMask = .flexibleWidth
         var newContainerViewFrame = self.containerView.frame
         newContainerViewFrame.origin.y = buttonBarHeight
