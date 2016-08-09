@@ -54,9 +54,8 @@ extension String {
     
     func substring(from: Int) -> String {
         return self.substring(from: index(self.startIndex, offsetBy: from))
-        //return self.substring(from: self.startIndex.advanced(from))
-        //myCollection.index(myIndex, offsetBy: …)
     }
+    
     var length: Int {
         return self.characters.count
     }
