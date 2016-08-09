@@ -26,10 +26,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="w5b-Pn-bmC" secondAttribute="trailing" id="2h8-Wp-le2"/>
-                            <constraint firstItem="w5b-Pn-bmC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="hVR-At-Xhk"/>
-                            <constraint firstItem="w5b-Pn-bmC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pfc-8r-BZK"/>
-                            <constraint firstItem="w5b-Pn-bmC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="td5-h8-iKt"/>
+                            <constraint firstAttribute="trailing" secondItem="w5b-Pn-bmC" secondAttribute="trailing" id="MLH-RX-M38"/>
+                            <constraint firstItem="w5b-Pn-bmC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="V4s-9S-1e8"/>
+                            <constraint firstItem="w5b-Pn-bmC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="skz-Ed-gJ5"/>
+                            <constraint firstItem="w5b-Pn-bmC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="uQI-Hz-mQS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DHx-av-ecJ"/>
@@ -61,8 +61,12 @@
         <scene sceneID="wV9-ID-QoA">
             <objects>
                 <viewController id="ohh-KM-7fp" customClass="ViewController" customModule="EdBinx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ZE-nq-dlg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xxc-y7-n6G"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e9C-t8-6rl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1r-JU-NOh" customClass="ButtonBarView" customModule="XLPagerTabStrip">
@@ -77,8 +81,8 @@
                             <constraint firstItem="B1r-JU-NOh" firstAttribute="leading" secondItem="e2s-n9-NEe" secondAttribute="leading" id="GZo-4C-fDc"/>
                             <constraint firstItem="B1r-JU-NOh" firstAttribute="leading" secondItem="e9C-t8-6rl" secondAttribute="leading" id="SUf-As-Xtr"/>
                             <constraint firstAttribute="bottom" secondItem="e2s-n9-NEe" secondAttribute="bottom" id="aMC-B0-mSN"/>
-                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="e9C-t8-6rl" secondAttribute="top" constant="41" id="omb-Cw-fPU"/>
-                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="B1r-JU-NOh" secondAttribute="bottom" constant="1" id="utY-Cg-D8J"/>
+                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="e9C-t8-6rl" secondAttribute="top" constant="44" id="pRf-un-IB7"/>
+                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="B1r-JU-NOh" secondAttribute="bottom" id="qva-fl-LOm"/>
                             <constraint firstItem="B1r-JU-NOh" firstAttribute="top" secondItem="e9C-t8-6rl" secondAttribute="top" id="xhX-1s-MVy"/>
                         </constraints>
                     </view>
