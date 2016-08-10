@@ -10,6 +10,7 @@
 		3181A12267F769D5509E102A /* Pods_EdBinxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CBCB638BB77A33F01C05D /* Pods_EdBinxUITests.framework */; };
 		991D34DF1D59F62E003B1FBA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D34DE1D59F62E003B1FBA /* Extensions.swift */; };
 		991D34E21D59FEEA003B1FBA /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D34E11D59FEEA003B1FBA /* ColorCodes.swift */; };
+		9984C8B11D5B224900E92323 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */; };
 		99CB89ED1D5477C3003E5B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */; };
 		99CB89EF1D5477C3003E5B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB89EE1D5477C3003E5B67 /* ViewController.swift */; };
 		99CB89F21D5477C3003E5B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CB89F01D5477C3003E5B67 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		9479E36DC0C0F0A235E593AC /* Pods_EdBinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991D34DE1D59F62E003B1FBA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		991D34E11D59FEEA003B1FBA /* ColorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
+		9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		99CB89E91D5477C3003E5B67 /* EdBinx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdBinx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99CB89EE1D5477C3003E5B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,22 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		9984C8AE1D5B140800E92323 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9984C8AF1D5B141B00E92323 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9984C8AF1D5B141B00E92323 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		99CB89E01D5477C2003E5B67 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */,
+				9984C8AE1D5B140800E92323 /* Resources */,
 				991D34E01D59F636003B1FBA /* Helpers */,
 				99CB8A1D1D549497003E5B67 /* NetworkDefaults.swift */,
 				99CB8A1F1D54B603003E5B67 /* AppDefaults.swift */,
@@ -321,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9984C8B11D5B224900E92323 /* Montserrat-Regular.otf in Resources */,
 				99FB75A11D59B64E00D157C3 /* Base2ViewController.xib in Resources */,
 				99FB75A41D59B64E00D157C3 /* Base1ViewController.xib in Resources */,
 				99CB89FA1D5477C3003E5B67 /* LaunchScreen.storyboard in Resources */,

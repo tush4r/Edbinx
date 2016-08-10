@@ -16,6 +16,10 @@ class ViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemTitleColor = .white
         buttonBarView.backgroundColor = UIColor(hex: ColorCodes().barColor())
         settings.style.buttonBarBackgroundColor = UIColor(hex: ColorCodes().navColor())
+        settings.style.buttonBarItemLeftRightMargin = 20
+        settings.style.buttonBarMinimumLineSpacing = 20
+        settings.style.buttonBarItemLeftRightMargin = 20
+        settings.style.buttonBarItemFont = UIFont(name: "Montserrat-Regular", size: 17)!
         buttonBarView.selectedBar.backgroundColor = UIColor(hex: ColorCodes().sliderColor())
     }
 

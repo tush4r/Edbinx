@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News-->
+        <!--EdBinx-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
@@ -18,8 +18,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-Pn-bmC">
-                                <frame key="frameInset" width="375" height="602"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-Pn-bmC">
                                 <connections>
                                     <segue destination="ohh-KM-7fp" kind="embed" id="nU3-sk-t8a"/>
                                 </connections>
@@ -33,7 +32,7 @@
                             <constraint firstItem="w5b-Pn-bmC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="uQI-Hz-mQS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="News" id="DHx-av-ecJ"/>
+                    <navigationItem key="navigationItem" title="EdBinx" id="DHx-av-ecJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.082352941176470587" green="0.066666666666666666" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -72,7 +71,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xxc-y7-n6G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e9C-t8-6rl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="602"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1r-JU-NOh" customClass="ButtonBarView" customModule="XLPagerTabStrip">
@@ -87,15 +86,15 @@
                             <constraint firstItem="B1r-JU-NOh" firstAttribute="leading" secondItem="e2s-n9-NEe" secondAttribute="leading" id="GZo-4C-fDc"/>
                             <constraint firstItem="B1r-JU-NOh" firstAttribute="leading" secondItem="e9C-t8-6rl" secondAttribute="leading" id="SUf-As-Xtr"/>
                             <constraint firstAttribute="bottom" secondItem="e2s-n9-NEe" secondAttribute="bottom" id="aMC-B0-mSN"/>
-                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="e9C-t8-6rl" secondAttribute="top" constant="44" id="pRf-un-IB7"/>
-                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="B1r-JU-NOh" secondAttribute="bottom" id="qva-fl-LOm"/>
+                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="e9C-t8-6rl" secondAttribute="top" constant="66" id="pRf-un-IB7"/>
+                            <constraint firstItem="e2s-n9-NEe" firstAttribute="top" secondItem="B1r-JU-NOh" secondAttribute="bottom" constant="-1" id="qva-fl-LOm"/>
                             <constraint firstItem="B1r-JU-NOh" firstAttribute="top" secondItem="e9C-t8-6rl" secondAttribute="top" id="xhX-1s-MVy"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvk-oA-Bz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853.5999999999999" y="-574.36281859070471"/>
+            <point key="canvasLocation" x="1853.5999999999999" y="-574.81259370314842"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
