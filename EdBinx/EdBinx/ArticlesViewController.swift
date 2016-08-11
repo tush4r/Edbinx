@@ -9,16 +9,49 @@
 import UIKit
 import XLPagerTabStrip
 
-class ArticlesViewController: UIViewController, IndicatorInfoProvider {
+class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, IndicatorInfoProvider {
 
-    let info:IndicatorInfo = "ALL"
+    private let info:IndicatorInfo = "ALL"
+    private let nib = UINib(nibName: "ArticlesCollectionViewCell", bundle: nil)
+    
+    @IBOutlet weak var collection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collection.register(ArticlesCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collection.register(nib, forCellWithReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
     }
 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = getRandomColor()
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let numberOfCell: CGFloat = 2   //you need to give a type as CGFloat
+        let cellWidth = UIScreen.main.bounds.size.width / numberOfCell
+        return CGSize(width:cellWidth, height:cellWidth)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        updateCollectionViewLayout(with: size)
+    }
+    
+    private func updateCollectionViewLayout(with size: CGSize) {
+        if let layout = collection.collectionViewLayout as? UICollectionViewFlowLayout {
+            let cellWidth = UIScreen.main.bounds.size.width / 2
+            layout.itemSize = (size.width < size.height) ? CGSize(width:cellWidth, height:cellWidth): CGSize(width:cellWidth, height:cellWidth)
+            layout.invalidateLayout()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -26,6 +59,13 @@ class ArticlesViewController: UIViewController, IndicatorInfoProvider {
     
     func indicatorInfoForPagerTabStrip(_ pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return info
+    }
+    
+    func getRandomColor() -> UIColor{
+        let randomRed:CGFloat = CGFloat(drand48())
+        let randomGreen:CGFloat = CGFloat(drand48())
+        let randomBlue:CGFloat = CGFloat(drand48())
+        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
     }
 
     /*

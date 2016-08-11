@@ -12,6 +12,8 @@
 		991D34E21D59FEEA003B1FBA /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D34E11D59FEEA003B1FBA /* ColorCodes.swift */; };
 		99703A0C1D5C670B00BE478E /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99703A0A1D5C670B00BE478E /* ArticlesViewController.swift */; };
 		99703A0D1D5C670B00BE478E /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99703A0B1D5C670B00BE478E /* ArticlesViewController.xib */; };
+		99703A101D5C785B00BE478E /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99703A0E1D5C785B00BE478E /* ArticlesCollectionViewCell.swift */; };
+		99703A111D5C785B00BE478E /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99703A0F1D5C785B00BE478E /* ArticlesCollectionViewCell.xib */; };
 		9984C8B11D5B224900E92323 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */; };
 		99CB89ED1D5477C3003E5B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */; };
 		99CB89EF1D5477C3003E5B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB89EE1D5477C3003E5B67 /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 		991D34E11D59FEEA003B1FBA /* ColorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
 		99703A0A1D5C670B00BE478E /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		99703A0B1D5C670B00BE478E /* ArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
+		99703A0E1D5C785B00BE478E /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
+		99703A0F1D5C785B00BE478E /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
 		9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		99CB89E91D5477C3003E5B67 /* EdBinx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdBinx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				99CB89EE1D5477C3003E5B67 /* ViewController.swift */,
 				99703A0A1D5C670B00BE478E /* ArticlesViewController.swift */,
 				99703A0B1D5C670B00BE478E /* ArticlesViewController.xib */,
+				99703A0E1D5C785B00BE478E /* ArticlesCollectionViewCell.swift */,
+				99703A0F1D5C785B00BE478E /* ArticlesCollectionViewCell.xib */,
 				99CB89F01D5477C3003E5B67 /* Main.storyboard */,
 				99CB89F81D5477C3003E5B67 /* LaunchScreen.storyboard */,
 				99CB89FB1D5477C3003E5B67 /* Info.plist */,
@@ -345,6 +351,7 @@
 				9984C8B11D5B224900E92323 /* Montserrat-Regular.otf in Resources */,
 				99CB89FA1D5477C3003E5B67 /* LaunchScreen.storyboard in Resources */,
 				99703A0D1D5C670B00BE478E /* ArticlesViewController.xib in Resources */,
+				99703A111D5C785B00BE478E /* ArticlesCollectionViewCell.xib in Resources */,
 				99CB89F71D5477C3003E5B67 /* Assets.xcassets in Resources */,
 				99CB89F21D5477C3003E5B67 /* Main.storyboard in Resources */,
 			);
@@ -500,6 +507,7 @@
 				991D34DF1D59F62E003B1FBA /* Extensions.swift in Sources */,
 				99CB89ED1D5477C3003E5B67 /* AppDelegate.swift in Sources */,
 				99703A0C1D5C670B00BE478E /* ArticlesViewController.swift in Sources */,
+				99703A101D5C785B00BE478E /* ArticlesCollectionViewCell.swift in Sources */,
 				99CB8A1E1D549497003E5B67 /* NetworkDefaults.swift in Sources */,
 				99CB89F51D5477C3003E5B67 /* EdBinx.xcdatamodeld in Sources */,
 			);
