@@ -11,10 +11,18 @@ import XLPagerTabStrip
 
 class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, IndicatorInfoProvider {
 
-    private let info:IndicatorInfo = "ALL"
+    private var itemInfo:IndicatorInfo = "ALL"
     private let nib = UINib(nibName: "ArticlesCollectionViewCell", bundle: nil)
+    private var flag = true
+    private var cellToColor = Int()
     
     @IBOutlet weak var collection: UICollectionView!
+    
+    convenience init(itemInfo: IndicatorInfo) {
+        self.init()
+        self.itemInfo = itemInfo
+        self.turnTables(value: itemInfo)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +38,8 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        let items = 13
+        return items
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -58,7 +67,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func indicatorInfoForPagerTabStrip(_ pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return info
+        return itemInfo
     }
     
     func getRandomColor() -> UIColor{
@@ -66,6 +75,10 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
         let randomGreen:CGFloat = CGFloat(drand48())
         let randomBlue:CGFloat = CGFloat(drand48())
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+    }
+    
+    func turnTables(value:IndicatorInfo) {
+        print("TURN THE TABLES", value.title)
     }
 
     /*

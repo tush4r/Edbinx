@@ -24,7 +24,7 @@ class ViewController: ButtonBarPagerTabStripViewController {
     }
 
     override func viewControllersForPagerTabStrip(_ pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        return [ArticlesViewController(), ArticlesViewController(), ArticlesViewController()]
+        return [ArticlesViewController(itemInfo:"ALL"), ArticlesViewController(itemInfo:"WORLD"), ArticlesViewController(itemInfo:"TECHNOLOGY"), ArticlesViewController(itemInfo: "SCIENCE")]
     }
 
     
