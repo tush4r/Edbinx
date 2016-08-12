@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5b-Pn-bmC">
@@ -51,7 +51,7 @@
                 <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="search" id="ocp-2p-cFe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YM2-cA-IY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1510" y="-855"/>
+            <point key="canvasLocation" x="1596" y="-596"/>
         </scene>
         <!--Nav Controller-->
         <scene sceneID="e95-jS-YhG">
@@ -86,7 +86,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xxc-y7-n6G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e9C-t8-6rl">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1r-JU-NOh" customClass="ButtonBarView" customModule="XLPagerTabStrip">
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvk-oA-Bz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="-425"/>
+            <point key="canvasLocation" x="2042" y="-555"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
