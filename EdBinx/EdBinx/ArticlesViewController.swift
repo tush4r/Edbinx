@@ -34,6 +34,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         cell.backgroundColor = getRandomColor()
+        
         return cell
     }
     
