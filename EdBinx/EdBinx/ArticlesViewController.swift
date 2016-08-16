@@ -15,6 +15,8 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     private let nib = UINib(nibName: "ArticlesCollectionViewCell", bundle: nil)
     private var flag = true
     private var cellToColor = Int()
+    private let totalNumberOfItems = 13
+    var array = [0]
     
     @IBOutlet weak var collection: UICollectionView!
     
@@ -26,21 +28,43 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        calculateArray()
+        print(array)
         collection.register(ArticlesCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.register(nib, forCellWithReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
     }
+    
+    func calculateArray() {
+        var i = 0
+        while i < totalNumberOfItems {
+            if i%2 == 0 {
+                i = i+3
+                print("EVEN ELEMENT", i)
+                array.append(i)
+            } else {
+                i = i+1
+                print("ODD ELEMENT", i)
+                array.append(i)
+            }
+        }
+    }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = getRandomColor()
+        //cell.backgroundColor = getRandomColor()
+        
+        if array.contains(indexPath.row) {
+            cell.backgroundColor = getRandomColor()
+        } else {
+            cell.backgroundColor = .clear
+        }
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let items = 13
-        return items
+        return totalNumberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
