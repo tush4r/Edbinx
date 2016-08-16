@@ -51,14 +51,20 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        //cell.backgroundColor = getRandomColor()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ArticlesCollectionViewCell
+        cell.articleImage.image = UIImage(named:"")
         
         if array.contains(indexPath.row) {
             cell.backgroundColor = getRandomColor()
+            
         } else {
             cell.backgroundColor = .clear
+            cell.articleTitle.textColor = .black
+            cell.authorName.textColor = .black
+            cell.articleImage.image = UIImage(named: "")
         }
+        
+        cell.articleCategory.backgroundColor = getRandomColor()
         
         return cell
     }
