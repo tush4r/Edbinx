@@ -28,24 +28,22 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calculateArray()
+        calculateIndexes()
         print(array)
         collection.register(ArticlesCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.register(nib, forCellWithReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
     }
     
-    func calculateArray() {
-        var i = 0
-        while i < totalNumberOfItems {
-            if i%2 == 0 {
-                i = i+3
-                print("EVEN ELEMENT", i)
-                array.append(i)
+    func calculateIndexes() {
+        var indexValue = 0
+        while indexValue < totalNumberOfItems {
+            if indexValue%2 == 0 {
+                indexValue = indexValue+3
+                array.append(indexValue)
             } else {
-                i = i+1
-                print("ODD ELEMENT", i)
-                array.append(i)
+                indexValue = indexValue+1
+                array.append(indexValue)
             }
         }
     }
@@ -109,7 +107,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func turnTables(value:IndicatorInfo) {
-        print("TURN THE TABLES", value.title)
+
     }
 
     /*

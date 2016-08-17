@@ -65,6 +65,7 @@
 		99703A121D5CD6D400BE478E /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		99703A141D5CD6E300BE478E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		99B9B5031D647F1A00AD4521 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		99CB89E91D5477C3003E5B67 /* EdBinx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdBinx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99CB89EE1D5477C3003E5B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		9984C8AF1D5B141B00E92323 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				99B9B5031D647F1A00AD4521 /* Montserrat-Bold.otf */,
 				9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */,
 			);
 			name = Fonts;

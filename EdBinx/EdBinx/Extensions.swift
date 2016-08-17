@@ -71,3 +71,16 @@ extension String {
         return nil
     }
 }
+
+extension UIView {
+    func withPadding(padding: UIEdgeInsets) -> UIView {
+    let container = UIView()
+    self.translatesAutoresizingMaskIntoConstraints = false
+    container.addSubview(self)
+        container.addConstraints(NSLayoutConstraint.constraints(
+            withVisualFormat: "|-(\(padding.left))-[view]-(\(padding.right))-|"
+    , options: [], metrics: nil, views: ["view": self]))
+        container.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-(\(padding.top))-[view]-(\(padding.bottom))-|", options: [], metrics: nil, views: ["view": self]))
+    return container
+    }
+}
