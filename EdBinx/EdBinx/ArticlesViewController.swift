@@ -29,7 +29,6 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateIndexes()
-        print(array)
         collection.register(ArticlesCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.register(nib, forCellWithReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
@@ -51,6 +50,10 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ArticlesCollectionViewCell
         cell.articleImage.image = UIImage(named:"")
+        
+        let indexPathNew = NSIndexPath(row: indexPath.row - 1, section:indexPath.section)
+        let secondIndexPathNew = NSIndexPath(row:indexPath.row - 2, section:indexPath.section)
+            print(indexPath.row, indexPathNew.row, secondIndexPathNew.row)
         
         if array.contains(indexPath.row) {
             cell.backgroundColor = getRandomColor()

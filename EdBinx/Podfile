@@ -1,21 +1,19 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '10.0'
 
-target 'EdBinx' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+platform :ios, '10.0'
+use_frameworks!
+    target 'EdBinx' do
+        pod 'Alamofire', '~> 4.0'
+        pod 'XLPagerTabStrip', '~> 5.0'
 
-  # Pods for EdBinx
-pod 'XLPagerTabStrip', '~> 5.0'
+    target 'EdBinxTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
 
-  target 'EdBinxTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'EdBinxUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+    target 'EdBinxUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
 
 end
