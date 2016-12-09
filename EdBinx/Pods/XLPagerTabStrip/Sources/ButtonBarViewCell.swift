@@ -24,10 +24,10 @@
 
 import Foundation
 
-public class ButtonBarViewCell: UICollectionViewCell {
+open class ButtonBarViewCell: UICollectionViewCell {
     
-    @IBOutlet public var imageView: UIImageView!
-    @IBOutlet public lazy var label: UILabel! = { [unowned self] in
+    @IBOutlet open var imageView: UIImageView!
+    @IBOutlet open lazy var label: UILabel! = { [unowned self] in
         let label = UILabel(frame: self.contentView.bounds)
         label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         label.textAlignment = .center
@@ -35,7 +35,7 @@ public class ButtonBarViewCell: UICollectionViewCell {
         return label
     }()
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
+    open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         if label.superview != nil {

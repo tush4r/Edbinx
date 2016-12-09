@@ -24,9 +24,9 @@
 
 import Foundation
 
-public class BarView: UIView {
+open class BarView: UIView {
     
-    public lazy var selectedBar: UIView = { [unowned self] in
+    open lazy var selectedBar: UIView = { [unowned self] in
         let selectedBar = UIView(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
         return selectedBar
     }()
@@ -53,7 +53,7 @@ public class BarView: UIView {
     
     // MARK: - Helpers
     
-    private func updateSelectedBarPositionWithAnimation(_ animation: Bool) {
+    fileprivate func updateSelectedBarPositionWithAnimation(_ animation: Bool) {
         var frame = selectedBar.frame
         frame.size.width = self.frame.size.width / CGFloat(optionsCount)
         frame.origin.x = frame.size.width * CGFloat(selectedIndex)
@@ -67,12 +67,12 @@ public class BarView: UIView {
         }
     }
     
-    public func moveToIndex(_ index: Int, animated: Bool) {
+    open func moveToIndex(_ index: Int, animated: Bool) {
         selectedIndex = index
         updateSelectedBarPositionWithAnimation(animated)
     }
     
-    public func moveToIndex(_ fromIndex: Int, toIndex: Int, progressPercentage: CGFloat) {
+    open func moveToIndex(_ fromIndex: Int, toIndex: Int, progressPercentage: CGFloat) {
         selectedIndex = (progressPercentage > 0.5) ? toIndex : fromIndex
         
         var newFrame = selectedBar.frame
@@ -86,7 +86,7 @@ public class BarView: UIView {
         selectedBar.frame = targetFrame
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         updateSelectedBarPositionWithAnimation(false)
     }

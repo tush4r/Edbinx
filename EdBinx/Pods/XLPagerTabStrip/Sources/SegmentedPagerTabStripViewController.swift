@@ -34,11 +34,11 @@ public struct SegmentedPagerTabStripSettings {
 }
 
 
-public class SegmentedPagerTabStripViewController: PagerTabStripViewController, PagerTabStripDataSource, PagerTabStripDelegate {
+open class SegmentedPagerTabStripViewController: PagerTabStripViewController, PagerTabStripDataSource, PagerTabStripDelegate {
     
-    @IBOutlet lazy public var segmentedControl: UISegmentedControl! = UISegmentedControl()
+    @IBOutlet lazy open var segmentedControl: UISegmentedControl! = UISegmentedControl()
     
-    public var settings = SegmentedPagerTabStripSettings()
+    open var settings = SegmentedPagerTabStripSettings()
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -54,9 +54,9 @@ public class SegmentedPagerTabStripViewController: PagerTabStripViewController, 
         datasource = self
     }
     
-    private(set) var shouldUpdateSegmentedControl = true
+    fileprivate(set) var shouldUpdateSegmentedControl = true
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         if segmentedControl.superview == nil {
             navigationItem.titleView = segmentedControl
@@ -66,7 +66,7 @@ public class SegmentedPagerTabStripViewController: PagerTabStripViewController, 
         reloadSegmentedControl()
     }
     
-    public override func reloadPagerTabStripView() {
+    open override func reloadPagerTabStripView() {
         super.reloadPagerTabStripView()
         if isViewLoaded {
             reloadSegmentedControl()
@@ -96,7 +96,7 @@ public class SegmentedPagerTabStripViewController: PagerTabStripViewController, 
     
     // MARK: - PagerTabStripDelegate
     
-    public func pagerTabStripViewController(_ pagerTabStripViewController: PagerTabStripViewController, updateIndicatorFromIndex fromIndex: Int, toIndex: Int) {
+    open func pagerTabStripViewController(_ pagerTabStripViewController: PagerTabStripViewController, updateIndicatorFromIndex fromIndex: Int, toIndex: Int) {
         if shouldUpdateSegmentedControl {
             segmentedControl.selectedSegmentIndex = toIndex
         }
@@ -104,7 +104,7 @@ public class SegmentedPagerTabStripViewController: PagerTabStripViewController, 
     
     // MARK: - UIScrollViewDelegate
     
-    public override func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    open override func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         super.scrollViewDidEndScrollingAnimation(scrollView)
         shouldUpdateSegmentedControl = true
     }

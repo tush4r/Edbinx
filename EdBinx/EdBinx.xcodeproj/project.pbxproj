@@ -16,7 +16,6 @@
 		99703A111D5C785B00BE478E /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99703A0F1D5C785B00BE478E /* ArticlesCollectionViewCell.xib */; };
 		99703A131D5CD6D400BE478E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99703A121D5CD6D400BE478E /* Search.storyboard */; };
 		99703A151D5CD6E300BE478E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99703A141D5CD6E300BE478E /* SearchViewController.swift */; };
-		9984C8B11D5B224900E92323 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */; };
 		99CB89ED1D5477C3003E5B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */; };
 		99CB89EF1D5477C3003E5B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB89EE1D5477C3003E5B67 /* ViewController.swift */; };
 		99CB89F21D5477C3003E5B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CB89F01D5477C3003E5B67 /* Main.storyboard */; };
@@ -53,6 +52,7 @@
 		2BBA738E69421C31A2FB6A6A /* Pods-EdBinxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdBinxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdBinxUITests/Pods-EdBinxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		421989844EE6A6E1C6068782 /* Pods-EdBinx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdBinx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdBinx/Pods-EdBinx.debug.xcconfig"; sourceTree = "<group>"; };
 		5B4CBCB638BB77A33F01C05D /* Pods_EdBinxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D14A601DFACADB00126035 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		6DAEC5C9CA5FCD84279454A3 /* Pods_EdBinxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837F87D8EE9548E267F80E9E /* Pods-EdBinxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdBinxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdBinxTests/Pods-EdBinxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9479E36DC0C0F0A235E593AC /* Pods_EdBinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,6 @@
 		99703A0F1D5C785B00BE478E /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
 		99703A121D5CD6D400BE478E /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		99703A141D5CD6E300BE478E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		99B9B5031D647F1A00AD4521 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		99CB89E91D5477C3003E5B67 /* EdBinx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdBinx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CB89EC1D5477C3003E5B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				99B9B5031D647F1A00AD4521 /* Montserrat-Bold.otf */,
-				9984C8B01D5B142900E92323 /* Montserrat-Regular.otf */,
+				63D14A601DFACADB00126035 /* Montserrat-Regular.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -306,7 +305,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = edbinx;
 				TargetAttributes = {
 					99CB89E81D5477C2003E5B67 = {
@@ -356,7 +355,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9984C8B11D5B224900E92323 /* Montserrat-Regular.otf in Resources */,
 				99CB89FA1D5477C3003E5B67 /* LaunchScreen.storyboard in Resources */,
 				99703A0D1D5C670B00BE478E /* ArticlesViewController.xib in Resources */,
 				99703A111D5C785B00BE478E /* ArticlesCollectionViewCell.xib in Resources */,

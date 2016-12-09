@@ -35,11 +35,11 @@ public struct BarPagerTabStripSettings {
     public var style = Style()
 }
 
-public class BarPagerTabStripViewController: PagerTabStripViewController, PagerTabStripDataSource, PagerTabStripIsProgressiveDelegate {
+open class BarPagerTabStripViewController: PagerTabStripViewController, PagerTabStripDataSource, PagerTabStripIsProgressiveDelegate {
     
-    public var settings = BarPagerTabStripSettings()
+    open var settings = BarPagerTabStripSettings()
     
-    @IBOutlet lazy public var barView: BarView! = { [unowned self] in
+    @IBOutlet lazy open var barView: BarView! = { [unowned self] in
         let barView = BarView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.settings.style.barHeight))
         barView.autoresizingMask = .flexibleWidth
         barView.backgroundColor = UIColor.black
@@ -53,7 +53,7 @@ public class BarPagerTabStripViewController: PagerTabStripViewController, PagerT
         datasource = self
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         barView.backgroundColor = self.settings.style.barBackgroundColor ?? barView.backgroundColor
         barView.selectedBar.backgroundColor = self.settings.style.selectedBarBackgroundColor ?? barView.selectedBar.backgroundColor
@@ -65,7 +65,7 @@ public class BarPagerTabStripViewController: PagerTabStripViewController, PagerT
         datasource = self
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if barView.superview == nil {
             view.addSubview(barView)
@@ -74,7 +74,7 @@ public class BarPagerTabStripViewController: PagerTabStripViewController, PagerT
         barView.moveToIndex(currentIndex, animated: false)
     }
     
-    public override func reloadPagerTabStripView() {
+    open override func reloadPagerTabStripView() {
         super.reloadPagerTabStripView()
         barView.optionsCount = viewControllers.count
         if isViewLoaded{
@@ -84,11 +84,11 @@ public class BarPagerTabStripViewController: PagerTabStripViewController, PagerT
     
     // MARK: - PagerTabStripDelegate
     
-    public func pagerTabStripViewController(_ pagerTabStripViewController: PagerTabStripViewController, updateIndicatorFromIndex fromIndex: Int, toIndex: Int) {
+    open func pagerTabStripViewController(_ pagerTabStripViewController: PagerTabStripViewController, updateIndicatorFromIndex fromIndex: Int, toIndex: Int) {
         barView.moveToIndex(toIndex, animated: true)
     }
     
-    public func pagerTabStripViewController(_ pagerTabStripViewController: PagerTabStripViewController, updateIndicatorFromIndex fromIndex: Int, toIndex: Int, withProgressPercentage progressPercentage: CGFloat, indexWasChanged: Bool) {
+    open func pagerTabStripViewController(_ pagerTabStripViewController: PagerTabStripViewController, updateIndicatorFromIndex fromIndex: Int, toIndex: Int, withProgressPercentage progressPercentage: CGFloat, indexWasChanged: Bool) {
         barView.moveToIndex(fromIndex, toIndex: toIndex, progressPercentage: progressPercentage)
     }
 }
