@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3181A12267F769D5509E102A /* Pods_EdBinxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CBCB638BB77A33F01C05D /* Pods_EdBinxUITests.framework */; };
+		63D14A621DFAE2C200126035 /* NetworkAPIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D14A611DFAE2C200126035 /* NetworkAPIRequests.swift */; };
 		991D34DF1D59F62E003B1FBA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D34DE1D59F62E003B1FBA /* Extensions.swift */; };
 		991D34E21D59FEEA003B1FBA /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D34E11D59FEEA003B1FBA /* ColorCodes.swift */; };
 		99703A0C1D5C670B00BE478E /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99703A0A1D5C670B00BE478E /* ArticlesViewController.swift */; };
@@ -53,6 +54,7 @@
 		421989844EE6A6E1C6068782 /* Pods-EdBinx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdBinx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdBinx/Pods-EdBinx.debug.xcconfig"; sourceTree = "<group>"; };
 		5B4CBCB638BB77A33F01C05D /* Pods_EdBinxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D14A601DFACADB00126035 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		63D14A611DFAE2C200126035 /* NetworkAPIRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPIRequests.swift; sourceTree = "<group>"; };
 		6DAEC5C9CA5FCD84279454A3 /* Pods_EdBinxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837F87D8EE9548E267F80E9E /* Pods-EdBinxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdBinxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdBinxTests/Pods-EdBinxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9479E36DC0C0F0A235E593AC /* Pods_EdBinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdBinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,7 @@
 				991D34E01D59F636003B1FBA /* Helpers */,
 				993E3A491D5B51F30082825D /* Defaults */,
 				99CB89EE1D5477C3003E5B67 /* ViewController.swift */,
+				63D14A611DFAE2C200126035 /* NetworkAPIRequests.swift */,
 				99703A0A1D5C670B00BE478E /* ArticlesViewController.swift */,
 				99703A121D5CD6D400BE478E /* Search.storyboard */,
 				99703A141D5CD6E300BE478E /* SearchViewController.swift */,
@@ -510,6 +513,7 @@
 			files = (
 				99703A151D5CD6E300BE478E /* SearchViewController.swift in Sources */,
 				991D34E21D59FEEA003B1FBA /* ColorCodes.swift in Sources */,
+				63D14A621DFAE2C200126035 /* NetworkAPIRequests.swift in Sources */,
 				99CB89EF1D5477C3003E5B67 /* ViewController.swift in Sources */,
 				99CB8A201D54B603003E5B67 /* AppDefaults.swift in Sources */,
 				991D34DF1D59F62E003B1FBA /* Extensions.swift in Sources */,

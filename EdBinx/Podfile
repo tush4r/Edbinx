@@ -5,6 +5,7 @@ use_frameworks!
     target 'EdBinx' do
         pod 'Alamofire', '~> 4.0'
         pod 'XLPagerTabStrip', '~> 5.0'
+        pod 'SwiftyJSON'
 
     target 'EdBinxTests' do
         inherit! :search_paths
