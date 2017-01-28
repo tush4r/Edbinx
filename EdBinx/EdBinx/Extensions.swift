@@ -16,9 +16,9 @@ extension UIColor {
     }
     
     convenience init(hex: String, alpha: CGFloat) {
-        var hexWithoutSymbol = hex
+        var hexWithoutSymbol:String = hex
         if hexWithoutSymbol.hasPrefix("#") {
-            hexWithoutSymbol = hex.substring(from:1)
+            hexWithoutSymbol.remove(at: hexWithoutSymbol.startIndex)
         }
         
         let scanner = Scanner(string: hexWithoutSymbol)
@@ -48,11 +48,11 @@ extension UIColor {
 }
 
 extension String {
-    static func className(aClass: AnyClass) -> String {
+    static func className(_ aClass: AnyClass) -> String {
        return NSStringFromClass(aClass).components(separatedBy: ".").last!
     }
     
-    func substring(from: Int) -> String {
+    func substring(_ from: Int) -> String {
         return self.substring(from: index(self.startIndex, offsetBy: from))
     }
     
@@ -60,7 +60,7 @@ extension String {
         return self.characters.count
     }
     
-    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+    func convertStringToDictionary(_ text: String) -> [String:AnyObject]? {
         if let data = text.data(using: String.Encoding.utf8) {
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
@@ -73,7 +73,7 @@ extension String {
 }
 
 extension UIView {
-    func withPadding(padding: UIEdgeInsets) -> UIView {
+    func withPadding(_ padding: UIEdgeInsets) -> UIView {
     let container = UIView()
     self.translatesAutoresizingMaskIntoConstraints = false
     container.addSubview(self)

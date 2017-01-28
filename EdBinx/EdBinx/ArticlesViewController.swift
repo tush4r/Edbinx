@@ -11,11 +11,11 @@ import XLPagerTabStrip
 
 class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, IndicatorInfoProvider {
 
-    private var itemInfo:IndicatorInfo = "ALL"
-    private let nib = UINib(nibName: "ArticlesCollectionViewCell", bundle: nil)
-    private var flag = true
-    private var cellToColor = Int()
-    private let totalNumberOfItems = 13
+    fileprivate var itemInfo:IndicatorInfo = "ALL"
+    fileprivate let nib = UINib(nibName: "ArticlesCollectionViewCell", bundle: nil)
+    fileprivate var flag = true
+    fileprivate var cellToColor = Int()
+    fileprivate let totalNumberOfItems = 13
     var array = [0]
     
     @IBOutlet weak var collection: UICollectionView!
@@ -23,7 +23,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
     convenience init(itemInfo: IndicatorInfo) {
         self.init()
         self.itemInfo = itemInfo
-        self.turnTables(value: itemInfo)
+        self.turnTables(itemInfo)
     }
     
     override func viewDidLoad() {
@@ -51,8 +51,8 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ArticlesCollectionViewCell
         cell.articleImage.image = UIImage(named:"")
         
-        let indexPathNew = NSIndexPath(row: indexPath.row - 1, section:indexPath.section)
-        let secondIndexPathNew = NSIndexPath(row:indexPath.row - 2, section:indexPath.section)
+        let indexPathNew = IndexPath(row: indexPath.row - 1, section:indexPath.section)
+        let secondIndexPathNew = IndexPath(row:indexPath.row - 2, section:indexPath.section)
             print(indexPath.row, indexPathNew.row, secondIndexPathNew.row)
         
         if array.contains(indexPath.row) {
@@ -74,7 +74,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
         return totalNumberOfItems
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         let numberOfCell: CGFloat = 2   //you need to give a type as CGFloat
         let cellWidth = UIScreen.main.bounds.size.width / numberOfCell
         return CGSize(width:cellWidth, height:cellWidth)
@@ -85,7 +85,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
         updateCollectionViewLayout(with: size)
     }
     
-    private func updateCollectionViewLayout(with size: CGSize) {
+    fileprivate func updateCollectionViewLayout(with size: CGSize) {
         if let layout = collection.collectionViewLayout as? UICollectionViewFlowLayout {
             let cellWidth = UIScreen.main.bounds.size.width / 2
             layout.itemSize = (size.width < size.height) ? CGSize(width:cellWidth, height:cellWidth): CGSize(width:cellWidth, height:cellWidth)
@@ -109,7 +109,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDataSource, UICo
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
     }
     
-    func turnTables(value:IndicatorInfo) {
+    func turnTables(_ value:IndicatorInfo) {
 
     }
 
